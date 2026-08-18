@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Building a pole barn: order of work, permits and DIY cost</title>
+<meta name="description" content="How a pole barn goes up, what has to be decided before the first post, and what hiring it out costs against doing it yourself.">
+<meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://polebarncost.com/build/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Building a pole barn: order of work, permits and DIY cost">
+<meta property="og:description" content="How a pole barn goes up, what has to be decided before the first post, and what hiring it out costs against doing it yourself.">
+<meta property="og:url" content="https://polebarncost.com/build/">
+<meta property="og:site_name" content="Pole Barn Cost">
+<link rel="icon" href="/polebarncost/favicon.svg?v=21e30273" type="image/svg+xml"><style>:root,:root[data-palette="field"]{--ground:#F7F9F5;--surface:#FFFFFF;--surface-2:#E9EFE6;--ink:#1A241C;--ink-2:#566057;--ink-3:#767F75;--line:#DCE4D8;--dark:#1E2A20;--on-dark:#F3F7F1;--accent:#2E7D32;--accent-2:#8A6520;--accent-wash:#E4F0E2;--accent-2-wash:#F5EEDD;color-scheme:light}:root[data-palette="clay"]{--ground:#F5F3EF;--surface:#FFFFFF;--surface-2:#EDE8DF;--ink:#221F1B;--ink-2:#67625A;--ink-3:#A39C90;--line:#DFD8CB;--dark:#24261F;--on-dark:#F5F3EF;--accent:#B4571A;--accent-2:#3C6B47;--accent-wash:#F7E8D7;--accent-2-wash:#E5EDE4;color-scheme:light}:root[data-palette="paper"]{--ground:#FFFFFF;--surface:#FFFFFF;--surface-2:#F1F3F2;--ink:#15181A;--ink-2:#586066;--ink-3:#98A0A6;--line:#E2E6E6;--dark:#15181A;--on-dark:#F7F8F8;--accent:#1F7A4C;--accent-2:#334155;--accent-wash:#E6F3EC;--accent-2-wash:#EDF0F4;color-scheme:light}:root[data-palette="journal"]{--ground:#FBFBFC;--surface:#FFFFFF;--surface-2:#EEF0F4;--ink:#14181F;--ink-2:#545C6B;--ink-3:#929AA8;--line:#E0E4EA;--dark:#141922;--on-dark:#F4F6F9;--accent:#17507A;--accent-2:#8A4B12;--accent-wash:#E4EEF6;--accent-2-wash:#F6EADD;color-scheme:light}:root[data-theme="dark"],:root[data-theme="dark"][data-palette="field"]{--ground:#101410;--surface:#171D18;--surface-2:#1F261F;--ink:#E7ECE6;--ink-2:#9AA69A;--ink-3:#6A756B;--line:#28312A;--dark:#0A0D0A;--on-dark:#E7ECE6;--accent:#63B95F;--accent-2:#C9A227;--accent-wash:#162415;--accent-2-wash:#251F10;color-scheme:dark}:root[data-theme="dark"][data-palette="clay"]{--ground:#151613;--surface:#1D1F1A;--surface-2:#262820;--ink:#EDEAE3;--ink-2:#A7A196;--ink-3:#6F6A61;--line:#31342B;--dark:#0D0E0C;--on-dark:#EDEAE3;--accent:#E0862E;--accent-2:#6FA97C;--accent-wash:#2F2418;--accent-2-wash:#1F2B21;color-scheme:dark}:root[data-theme="dark"][data-palette="paper"]{--ground:#0F1113;--surface:#16191C;--surface-2:#1E2226;--ink:#E8EAEC;--ink-2:#9BA3AA;--ink-3:#6B7379;--line:#262B30;--dark:#0A0C0D;--on-dark:#E8EAEC;--accent:#3FBF7F;--accent-2:#94A3B8;--accent-wash:#12241B;--accent-2-wash:#1B2129;color-scheme:dark}:root[data-theme="dark"][data-palette="journal"]{--ground:#0E1116;--surface:#151A21;--surface-2:#1D232C;--ink:#E7EAF0;--ink-2:#99A2B0;--ink-3:#6A7382;--line:#262D38;--dark:#090C10;--on-dark:#E7EAF0;--accent:#4B9FD6;--accent-2:#E0A244;--accent-wash:#12232F;--accent-2-wash:#2A2113;color-scheme:dark}:root{--bar-h:74px;--display:"Helvetica Neue",Inter,ui-sans-serif,-apple-system,Arial,sans-serif;--body:ui-sans-serif,-apple-system,"SF Pro Text","Helvetica Neue",Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--r-sm:10px;--r:18px;--r-lg:28px;--wrap:1640px;--wrap-read:1120px;--gap:24px;--sp-section:46px;--sp-block:26px;--sp-tight:14px;--btn-base:color-mix(in srgb,var(--dark) 64%,var(--accent) 36%)}@media (max-width:900px){:root{--bar-h:64px;--sp-section:34px;--sp-block:20px;--sp-tight:12px}}@media (max-width:620px){:root{--sp-section:28px;--sp-block:18px}}*{box-sizing:border-box}html{-webkit-tap-highlight-color:transparent;scroll-padding-top:77px;overflow-x:clip}@media (max-width:900px){html{scroll-padding-top:74px}}body{margin:0;background:var(--ground);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 28px}.bar{position:sticky;top:0;z-index:50;background:transparent;border-bottom:1px solid color-mix(in srgb,var(--line) 65%,transparent);position:sticky}.bar::before{content:"";position:absolute;inset:0;z-index:-1;background:color-mix(in srgb,var(--ground) 70%,transparent);-webkit-backdrop-filter:blur(16px) saturate(1.7);backdrop-filter:blur(16px) saturate(1.7);transition:background-color 0.24s ease}.bar::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgb(255 255 255 / 14%) 0%,rgb(255 255 255 / 0%) 62%)}:root[data-theme="dark"] .bar::after{background:linear-gradient(180deg,rgb(255 255 255 / 6%) 0%,rgb(255 255 255 / 0%) 62%)}.bar.is-compact::before{background:color-mix(in srgb,var(--ground) 88%,transparent)}.bar .wrap{display:flex;align-items:center;gap:12px;height:74px}.logo{display:inline-flex;align-items:center;min-height:44px;gap:11px;color:var(--ink);text-decoration:none;font-family:var(--display);font-weight:800;font-size:15px;line-height:1.02;letter-spacing:-0.01em;text-transform:uppercase}.logo svg{flex:none}.logo .mark{transition:transform 0.24s cubic-bezier(0.22,0.61,0.36,1)}.logo:hover .mark{transform:translateY(-1px) rotate(-2deg)}.logo:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:var(--r-sm)}.wordmark{display:flex;flex-direction:column}.wordmark i{font-style:normal}.wordmark i + i{margin-top:3px;font-size:10.5px;font-weight:700;letter-spacing:0.17em;color:var(--ink-3)}nav.site{display:flex;align-items:center;gap:1px;flex-wrap:nowrap;margin-left:auto;flex-wrap:wrap}nav.site a{position:relative;color:var(--ink-2);text-decoration:none;font-size:13.5px;padding:8px 11px;border-radius:999px;white-space:nowrap;border:1px solid transparent;transition:color 0.18s ease,background-color 0.18s ease,border-color 0.18s ease,transform 0.18s ease}nav.site a:hover{color:var(--accent);background:linear-gradient(180deg,rgb(255 255 255 / 55%) 0%,rgb(255 255 255 / 10%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--accent-wash) 78%,transparent);border-color:color-mix(in srgb,var(--accent) 30%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 55%),0 3px 10px color-mix(in srgb,var(--ink) 9%,transparent);-webkit-backdrop-filter:blur(10px) saturate(1.5);backdrop-filter:blur(10px) saturate(1.5);transform:translateY(-1px)}:root[data-theme="dark"] nav.site a:hover{background:linear-gradient(180deg,rgb(255 255 255 / 12%) 0%,rgb(255 255 255 / 3%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--accent-wash) 70%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 12%),0 3px 10px rgb(0 0 0 / 35%)}nav.site a:active{transform:translateY(0)}nav.site a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}nav.site a[aria-current="page"]{background:linear-gradient(180deg,rgb(255 255 255 / 30%) 0%,rgb(255 255 255 / 6%) 50%,rgb(255 255 255 / 0%) 66%),color-mix(in srgb,var(--accent) 92%,transparent);border-color:color-mix(in srgb,var(--accent) 80%,transparent);color:var(--ground);box-shadow:inset 0 1px 0 rgb(255 255 255 / 34%),inset 0 -1px 0 rgb(0 0 0 / 16%),0 4px 12px color-mix(in srgb,var(--accent) 34%,transparent);-webkit-backdrop-filter:blur(10px) saturate(1.6);backdrop-filter:blur(10px) saturate(1.6)}nav.site a[aria-current="page"]:hover{color:var(--ground);background:color-mix(in srgb,var(--accent) 88%,var(--ink))}.more{position:relative}.more-toggle{display:inline-flex;align-items:center;gap:5px;margin:0;padding:8px 11px;border:1px solid transparent;border-radius:999px;background:none;color:var(--ink-2);font:inherit;font-size:13.5px;cursor:pointer;white-space:nowrap;transition:color 0.18s ease,background-color 0.18s ease,border-color 0.18s ease,transform 0.18s ease}.more-toggle svg{transition:transform 0.22s ease}.more-toggle:hover,.more-toggle[data-active="true"]{color:var(--accent);background:linear-gradient(180deg,rgb(255 255 255 / 55%) 0%,rgb(255 255 255 / 10%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--accent-wash) 78%,transparent);border-color:color-mix(in srgb,var(--accent) 30%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 55%),0 3px 10px color-mix(in srgb,var(--ink) 9%,transparent);-webkit-backdrop-filter:blur(10px) saturate(1.5);backdrop-filter:blur(10px) saturate(1.5)}.more-toggle:hover{transform:translateY(-1px)}:root[data-theme="dark"] .more-toggle:hover,:root[data-theme="dark"] .more-toggle[data-active="true"]{background:linear-gradient(180deg,rgb(255 255 255 / 12%) 0%,rgb(255 255 255 / 3%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--accent-wash) 70%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 12%),0 3px 10px rgb(0 0 0 / 35%)}.more-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.more-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}.more-sheet{position:absolute;right:0;top:calc(100% + 10px);z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:2px;min-width:360px;padding:8px;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:var(--r);background:linear-gradient(180deg,rgb(255 255 255 / 45%) 0%,rgb(255 255 255 / 6%) 40%,rgb(255 255 255 / 0%) 70%),color-mix(in srgb,var(--surface) 82%,transparent);-webkit-backdrop-filter:blur(22px) saturate(1.7);backdrop-filter:blur(22px) saturate(1.7);box-shadow:inset 0 1px 0 rgb(255 255 255 / 50%),0 20px 44px color-mix(in srgb,var(--ink) 16%,transparent);opacity:0;transform:translateY(-6px);visibility:hidden;transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.22,0.61,0.36,1),visibility 0s linear 0.22s}.more-sheet.is-open{opacity:1;transform:translateY(0);visibility:visible;transition:opacity 0.18s ease,transform 0.22s cubic-bezier(0.22,0.61,0.36,1),visibility 0s}:root[data-theme="dark"] .more-sheet{background:linear-gradient(180deg,rgb(255 255 255 / 8%) 0%,rgb(255 255 255 / 2%) 40%,rgb(255 255 255 / 0%) 70%),color-mix(in srgb,var(--surface) 88%,transparent);border-color:color-mix(in srgb,var(--on-dark) 14%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 10%),0 20px 44px rgb(0 0 0 / 55%)}.more-cap{grid-column:1 / -1;padding:9px 12px 4px;color:var(--ink-3);font-size:10.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase}.more-cap:first-child{padding-top:5px}nav.site .more-sheet a{padding:9px 12px;border-radius:var(--r-sm);color:var(--ink);font-size:13.5px}nav.site .more-sheet a:hover{transform:none}nav.site .more-sheet a[aria-current="page"],nav.site .more-sheet a[aria-current="page"]:hover{position:relative;background:linear-gradient(90deg,var(--accent-wash) 0%,color-mix(in srgb,var(--accent-wash) 30%,transparent) 55%,transparent 96%);border-color:transparent;color:var(--accent);box-shadow:none}nav.site .more-sheet a[aria-current="page"]::before{content:"";position:absolute;left:3px;top:50%;width:3px;height:15px;border-radius:999px;background:var(--accent);transform:translateY(-50%)}.bar .cta{margin-left:4px;padding:13px 20px;white-space:nowrap;transition:transform 0.18s ease,box-shadow 0.18s ease}.bar .cta:hover{transform:translateY(-1px);box-shadow:0 8px 18px color-mix(in srgb,var(--ink) 22%,transparent)}h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.025em;text-transform:uppercase;line-height:0.98;margin:0}h1{font-size:clamp(34px,6.2vw,72px)}h2{font-size:clamp(26px,3.6vw,44px)}h3{font-size:clamp(19px,2vw,24px);letter-spacing:-0.015em}.dim{color:var(--ink-3)}.lede{font-size:17px;line-height:1.25;color:var(--ink-2);max-width:46ch;margin:0}.pill{display:inline-flex;align-items:center;gap:7px;width:fit-content;justify-self:start;align-self:start;padding:0;border:0;border-radius:0;background:none;font-size:11.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-2);text-decoration:none}.pill::before{content:"";width:16px;height:1px;background:currentColor;opacity:0.55}a.pill:hover{color:var(--accent)}.btn{display:inline-flex;position:relative;transition:transform 0.22s cubic-bezier(0.22,0.61,0.36,1),box-shadow 0.22s ease,color 0.2s ease,border-color 0.2s ease,background 0.24s ease;align-items:center;gap:9px;padding:15px 26px;border-radius:999px;background:linear-gradient(180deg,rgb(255 255 255 / 18%) 0%,rgb(255 255 255 / 4%) 46%,rgb(255 255 255 / 0%) 62%),color-mix(in srgb,var(--btn-base) 88%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.6);backdrop-filter:blur(14px) saturate(1.6);color:var(--on-dark);font-size:14px;font-weight:600;text-decoration:none;border:1px solid color-mix(in srgb,var(--on-dark) 16%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 20%),inset 0 -1px 0 rgb(0 0 0 / 14%),0 6px 16px color-mix(in srgb,var(--ink) 13%,transparent)}.btn:hover{background:linear-gradient(180deg,rgb(255 255 255 / 26%) 0%,rgb(255 255 255 / 7%) 48%,rgb(255 255 255 / 0%) 64%),color-mix(in srgb,var(--btn-base) 94%,transparent);transform:translateY(-2px);box-shadow:0 12px 24px color-mix(in srgb,var(--ink) 24%,transparent)}.btn:active{transform:translateY(0);box-shadow:none}.btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.btn svg{transition:transform 0.24s cubic-bezier(0.22,0.61,0.36,1)}.btn:hover svg{transform:translateY(3px)}:root[data-theme="dark"] .btn{background:linear-gradient(180deg,rgb(255 255 255 / 10%) 0%,rgb(255 255 255 / 2%) 46%,rgb(255 255 255 / 0%) 62%),color-mix(in srgb,var(--btn-base) 82%,transparent);border-color:color-mix(in srgb,var(--on-dark) 22%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 12%),inset 0 -1px 0 rgb(0 0 0 / 30%),0 8px 22px rgb(0 0 0 / 45%)}:root[data-theme="dark"] .btn:hover{background:linear-gradient(180deg,rgb(255 255 255 / 16%) 0%,rgb(255 255 255 / 4%) 48%,rgb(255 255 255 / 0%) 64%),color-mix(in srgb,var(--btn-base) 90%,transparent)}section.wrap{padding-block:0}.hero-top{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);gap:40px;align-items:end}.hero-head{container-type:inline-size}@media (min-width:901px){.hero-head h1{font-size:min(clamp(34px,6.2vw,72px),calc(100cqi / var(--h1-fit,0.5)))}}.hero-aside{display:flex;flex-direction:column;gap:22px;align-items:flex-start}.hero-shot{position:relative;margin-top:var(--sp-block);border-radius:var(--r-lg);overflow:hidden;background:var(--surface-2)}.hero-shot .gal{max-height:62vh}section{padding:var(--sp-section) 0}.crumbs{font-size:13px;color:var(--ink-3);padding:var(--sp-block) 0 var(--sp-tight)}.crumbs a{color:var(--ink-2);text-decoration:none}.crumbs a:hover{text-decoration:underline}.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:64px;align-items:start;padding-bottom:24px}@media (max-width:1240px){.layout{grid-template-columns:minmax(0,1fr) 288px;gap:44px}}.prose{max-width:none}.prose h1{font-size:clamp(28px,3.4vw,42px);line-height:1.04;margin-bottom:18px}.prose h2{font-size:clamp(22px,2.4vw,30px);margin:42px 0 14px}.prose h3{margin:30px 0 10px}.prose p,.prose li{font-size:19px;line-height:1.2;color:var(--ink)}.prose :is(p,li,td,th,figcaption,blockquote,dd) a:not(.btn):not(.outlet):not(.next-read):not(.glossary-link){color:var(--ink);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);text-decoration-thickness:1px;text-underline-offset:3px;transition:color 0.18s ease,text-decoration-color 0.18s ease}.prose :is(p,li,td,th,figcaption,blockquote,dd) a:not(.btn):not(.outlet):not(.next-read):not(.glossary-link):hover{color:var(--accent);text-decoration-color:var(--accent)}.prose :is(p,li,td,th,figcaption,blockquote,dd) a.glossary-link,.glossary-link{color:inherit;text-decoration:underline dotted;text-decoration-color:color-mix(in srgb,var(--ink-3) 75%,transparent);text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer;transition:color 0.18s ease,text-decoration-color 0.18s ease}.prose :is(p,li,td,th,figcaption,blockquote,dd) a.glossary-link:hover,.glossary-link:hover{color:var(--accent);text-decoration:underline solid;text-decoration-color:var(--accent);text-decoration-thickness:1px}.prose .facts-src a,.facts-src a{color:var(--accent-2);text-decoration-color:color-mix(in srgb,var(--accent-2) 40%,transparent)}table{width:100%;border-collapse:collapse;font-size:14.5px;margin:24px 0}th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line)}th{font-family:var(--display);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-2)}aside.rail{position:sticky;top:96px;display:flex;flex-direction:column;gap:18px}.toc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px}.toc b{font-family:var(--display);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent-2)}.toc ul{list-style:none;margin:12px 0 0;padding:0}.toc li{margin:0 0 9px}.toc a{font-size:14px;color:var(--ink-2);text-decoration:none}.toc a:hover{color:var(--ink)}@media (max-width:1080px){.layout{grid-template-columns:minmax(0,1fr);gap:var(--sp-block)}.toc-page{display:none}aside.rail{position:static}}@media (max-width:900px){.hero-top{grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}section{padding:var(--sp-section) 0}.wrap{padding:0 18px}.hero-shot{margin-top:22px}.hero-shot .gal{aspect-ratio:16 / 10}}.burger{display:none;width:44px;height:44px;margin-left:auto;padding:0;border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);border-radius:999px;background:linear-gradient(180deg,rgb(255 255 255 / 55%) 0%,rgb(255 255 255 / 8%) 55%,rgb(255 255 255 / 0%) 72%),color-mix(in srgb,var(--surface) 52%,transparent);-webkit-backdrop-filter:blur(12px) saturate(1.5);backdrop-filter:blur(12px) saturate(1.5);box-shadow:inset 0 1px 0 rgb(255 255 255 / 50%),0 3px 10px color-mix(in srgb,var(--ink) 10%,transparent);cursor:pointer;position:relative}:root[data-theme="dark"] .burger{background:linear-gradient(180deg,rgb(255 255 255 / 12%) 0%,rgb(255 255 255 / 3%) 55%,rgb(255 255 255 / 0%) 72%),color-mix(in srgb,var(--surface) 46%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 12%),0 3px 10px rgb(0 0 0 / 40%)}.burger span{position:absolute;left:13px;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:transform 0.26s ease,opacity 0.18s ease}.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}.burger[aria-expanded="true"] span:nth-child(2){opacity:0}.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}.burger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.nav-scrim{position:fixed;inset:0;z-index:45;background:color-mix(in srgb,var(--ink) 42%,transparent);opacity:0;transition:opacity 0.26s ease}.nav-scrim.is-on{opacity:1}.in-drawer{display:none}@media (max-width:1180px){.bar .wrap{gap:12px;height:64px}.burger{display:block;position:relative;z-index:51}.cta.on-bar{display:none}.cta.in-drawer{display:inline-flex;margin:12px 0 0}nav.site a.in-drawer{display:block}nav.site{position:fixed;z-index:50;top:var(--bar-h);right:0;bottom:0;left:0;width:100%;margin:0;padding:18px 20px 0;display:flex;flex-direction:column;align-items:stretch;flex-wrap:nowrap;gap:2px;background:var(--surface);transform:translateX(102%);visibility:hidden;transition:transform 0.32s cubic-bezier(0.22,0.61,0.36,1),visibility 0s linear 0.32s;overflow-y:auto;overscroll-behavior:contain}.bar .logo,.bar .theme-toggle,.bar .burger{position:relative;z-index:100}nav.site>:last-child{margin-bottom:calc(28px + env(safe-area-inset-bottom))}nav.site.is-open{transform:translateX(0);visibility:visible;transition:transform 0.32s cubic-bezier(0.22,0.61,0.36,1),visibility 0s}nav.site a{font-size:16px;padding:13px 10px;border-radius:var(--r-sm);min-height:46px;display:flex;align-items:center}nav.site a[aria-current="page"],nav.site a[aria-current="page"]:hover{position:relative;background:linear-gradient(90deg,var(--accent-wash) 0%,color-mix(in srgb,var(--accent-wash) 26%,transparent) 58%,transparent 96%);background-repeat:no-repeat;border-color:transparent;color:var(--accent);box-shadow:none}nav.site a[aria-current="page"]::before{content:"";position:absolute;left:2px;top:50%;width:3px;height:18px;border-radius:999px;background:var(--accent);transform:translateY(-50%)}.more{display:contents}.more-toggle{display:none}.more-sheet,:root[data-theme="dark"] .more-sheet{position:static;display:grid;grid-template-columns:1fr;gap:2px 8px;min-width:0;padding:0;border:0;border-radius:0;background:none;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none;opacity:1;transform:none;visibility:visible;transition:none}.more-cap{padding:16px 14px 6px;border-top:1px solid var(--line);margin-top:8px}.more-sheet .more-cap{grid-column:1 / -1}nav.site .more-sheet a{font-size:16px;padding:13px 10px;min-height:46px}@media (min-width:384px){.more-sheet,:root[data-theme="dark"] .more-sheet{grid-template-columns:1fr 1fr}}nav.site a{white-space:normal}.cta.in-drawer{background:var(--accent);color:#FFFFFF;justify-content:center}.cta.in-drawer:hover{background:color-mix(in srgb,var(--accent) 88%,#000)}body.nav-open{overscroll-behavior:contain}}@media (max-width:620px){h1{font-size:clamp(30px,9vw,40px)}h2{font-size:clamp(23px,6.4vw,32px)}.lede{font-size:16px}.prose p,.prose li{font-size:16.5px}.crumbs{padding:18px 0 12px}.btn{padding:13px 22px}.gal-nav{width:38px;height:38px;margin-top:-19px}}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0}.table-wrap table{margin:0;min-width:460px}.facts{margin:var(--sp-block) 0;padding:20px 22px 6px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}.facts-top{margin-bottom:4px}.facts-top h2{margin:6px 0 0;font-size:21px;letter-spacing:-0.01em;text-transform:none}.facts .table-wrap{margin:14px 0 0}.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}.facts-table th,.facts-table td{padding:11px 14px 11px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}.facts-table thead th{padding-top:0;color:var(--ink-3);font-size:10.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase}.facts-table tbody th{width:34%;color:var(--ink-2);font-size:14px;font-weight:500;letter-spacing:0;text-transform:none}.facts-table tbody tr:last-child th,.facts-table tbody tr:last-child td{border-bottom:0}.facts-value{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--ink)}.facts-hint{display:block;margin-top:3px;color:var(--ink-3);font-size:12.5px}.facts-src{width:26%;font-size:12.5px}.facts-src a{color:var(--accent-2)}.facts-src a.facts-same{color:var(--ink-3);text-decoration:underline dotted;text-underline-offset:3px}.facts-src a.facts-same:hover,.facts-src a.facts-same:focus-visible{color:var(--accent-2)}@media (max-width:620px){.facts{padding:16px 16px 6px}.facts .table-wrap{overflow:visible}.facts .table-wrap table{min-width:0}.facts-table,.facts-table tbody,.facts-table tr,.facts-table td,.facts-table tbody th{display:block;width:auto;min-width:0}.facts-table thead{display:none}.facts-table tr{padding:12px 0;border-bottom:1px solid var(--line)}.facts-table tr:last-child{border-bottom:0}.facts-table tbody th,.facts-table td{padding:0;border-bottom:0}.facts-table tbody th{margin-bottom:4px;font-size:13px;color:var(--ink-3)}.facts-table .facts-value{font-size:15px}.facts-src{margin-top:6px;font-size:12.5px}.facts-src::before{content:"Source: ";color:var(--ink-3)}}.js .reveal{opacity:0;transform:translateY(16px);transition:opacity 0.34s cubic-bezier(0.22,0.61,0.36,1),transform 0.34s cubic-bezier(0.22,0.61,0.36,1);will-change:opacity,transform}.js .reveal.is-in{opacity:1;transform:none;will-change:auto}.js .reveal.zoom .gal-slide img{transform:scale(1.07);transition:transform 1.1s cubic-bezier(0.22,0.61,0.36,1)}.js .reveal.zoom.is-in .gal-slide.is-on img{transform:scale(1)}.rise-lines .line{display:block;overflow:hidden}.rise-lines .line>span{display:block}.js .rise-lines .line>span{transform:translateY(105%);transition:transform 0.78s cubic-bezier(0.16,0.84,0.28,1)}.js .rise-lines.is-in .line>span{transform:translateY(0)}.bar{transition:box-shadow 0.24s ease,background-color 0.24s ease}.bar.no-anim .wrap{transition:none}.anchor-landing .reveal,.anchor-landing .rise-lines .line>span{transition:none !important}.js.anchor-landing .reveal{opacity:1;transform:none}.bar.is-compact{box-shadow:0 6px 22px color-mix(in srgb,var(--ink) 10%,transparent)}.gal{position:relative;display:block;width:100%;aspect-ratio:var(--gal-ratio,16 / 9);border-radius:var(--r-sm);overflow:hidden;background:var(--surface-2);touch-action:pan-y;cursor:grab}.gal.is-dragging{cursor:grabbing}.gal img{-webkit-user-drag:none;user-select:none}.gal:not(:has(.gal-slide + .gal-slide)){cursor:default}.hero-shot .gal{border-radius:var(--r-lg)}.gal-track{position:absolute;inset:0}.gal-slide{position:absolute;inset:0;opacity:0;transition:opacity 0.75s ease}.gal-slide.is-on{opacity:1}.gal-slide img{width:100%;height:100%;object-fit:cover;display:block}.gal-nav{position:absolute;top:50%;z-index:4;width:34px;height:34px;margin-top:-17px;display:grid;place-items:center;border:0;border-radius:999px;background:linear-gradient(180deg,rgb(255 255 255 / 55%) 0%,rgb(255 255 255 / 10%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--surface) 58%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 55%),0 4px 12px rgb(0 0 0 / 18%);color:var(--ink);cursor:pointer;opacity:0;transform:scale(0.9);transition:opacity 0.2s ease,transform 0.2s ease,background 0.24s ease;-webkit-backdrop-filter:blur(10px) saturate(1.5);backdrop-filter:blur(10px) saturate(1.5)}:root[data-theme="dark"] .gal-nav{background:linear-gradient(180deg,rgb(255 255 255 / 14%) 0%,rgb(255 255 255 / 3%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--surface) 52%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 14%),0 4px 12px rgb(0 0 0 / 45%)}.gal-nav.prev{left:10px}.gal-nav.next{right:10px}.gal:hover .gal-nav,.gal:focus-within .gal-nav{opacity:1;transform:scale(1)}.gal-nav:hover{background:var(--accent);color:#FFFFFF}.gal-nav:focus-visible{outline:2px solid var(--accent);outline-offset:2px;opacity:1}.gal-dots{position:absolute;z-index:4;left:12px;bottom:10px;display:flex;gap:6px}.gal-dot{position:relative;width:20px;height:4px;padding:0;border:0;border-radius:999px;background:color-mix(in srgb,#FFFFFF 55%,transparent);cursor:pointer;transition:background-color 0.24s ease,width 0.24s ease}.gal-dot::after{content:"";position:absolute;inset:-14px -6px}.gal-dot.is-on{width:30px;background:var(--accent)}.gal-dot:focus-visible{outline:2px solid var(--accent);outline-offset:3px}@media (hover:none){.gal-nav{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){.js .reveal,.js .rise-lines .line>span{opacity:1;transform:none;transition:none}.gal-slide{transition:none}}.crumbs span[aria-current]{color:var(--ink-3)}.theme-toggle{width:42px;height:42px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);border-radius:999px;background:linear-gradient(180deg,rgb(255 255 255 / 55%) 0%,rgb(255 255 255 / 8%) 55%,rgb(255 255 255 / 0%) 72%),color-mix(in srgb,var(--surface) 52%,transparent);-webkit-backdrop-filter:blur(12px) saturate(1.5);backdrop-filter:blur(12px) saturate(1.5);box-shadow:inset 0 1px 0 rgb(255 255 255 / 50%),0 3px 10px color-mix(in srgb,var(--ink) 10%,transparent);color:var(--ink-2);cursor:pointer;transition:color 0.2s ease,border-color 0.2s ease,background 0.24s ease,transform 0.2s ease}:root[data-theme="dark"] .theme-toggle{background:linear-gradient(180deg,rgb(255 255 255 / 12%) 0%,rgb(255 255 255 / 3%) 55%,rgb(255 255 255 / 0%) 72%),color-mix(in srgb,var(--surface) 46%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 12%),0 3px 10px rgb(0 0 0 / 40%)}.theme-toggle:hover{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent);transform:translateY(-1px)}.theme-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.theme-toggle svg{grid-area:1 / 1;display:none}.theme-toggle[data-mode="light"] .i-sun{display:block}.theme-toggle[data-mode="dark"] .i-moon{display:block}.theme-toggle[data-mode="system"] .i-auto,.theme-toggle:not([data-mode]) .i-auto{display:block}@media (max-width:900px){.theme-toggle{margin-left:auto}.burger{margin-left:0}}.pb-0{padding-bottom:0}.sel{position:relative}.sel-native{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}html:not(.js) .sel-native{position:static;width:100%;height:auto;opacity:1;pointer-events:auto}html:not(.js) .sel-btn,html:not(.js) .sel-list{display:none}.sel-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:var(--r-sm);background:linear-gradient(180deg,rgb(255 255 255 / 40%) 0%,rgb(255 255 255 / 5%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--ground) 70%,transparent);-webkit-backdrop-filter:blur(10px) saturate(1.4);backdrop-filter:blur(10px) saturate(1.4);color:var(--ink);font:500 17px/1.2 var(--body);text-align:left;cursor:pointer;transition:border-color 0.18s ease,background 0.22s ease}:root[data-theme="dark"] .sel-btn{background:linear-gradient(180deg,rgb(255 255 255 / 10%) 0%,rgb(255 255 255 / 2%) 55%,rgb(255 255 255 / 0%) 74%),color-mix(in srgb,var(--ground) 62%,transparent)}.sel-btn:hover{border-color:color-mix(in srgb,var(--accent) 42%,var(--line))}.sel-btn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}.sel-btn svg{flex:none;color:var(--ink-3);transition:transform 0.22s ease}.sel.is-open .sel-btn{border-color:var(--accent)}.sel.is-open .sel-btn svg{transform:rotate(180deg)}.sel-list{position:absolute;z-index:20;top:calc(100% + 6px);left:0;right:0;display:flex;flex-direction:column;gap:2px;padding:6px;overflow-y:auto;overscroll-behavior:contain;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:var(--r);background:linear-gradient(180deg,rgb(255 255 255 / 42%) 0%,rgb(255 255 255 / 6%) 40%,rgb(255 255 255 / 0%) 70%),color-mix(in srgb,var(--surface) 88%,transparent);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);box-shadow:inset 0 1px 0 rgb(255 255 255 / 45%),0 18px 38px color-mix(in srgb,var(--ink) 16%,transparent);opacity:0;transform:translateY(-8px) scale(0.985);transform-origin:top center;transition:opacity 0.16s ease,transform 0.2s cubic-bezier(0.22,0.61,0.36,1)}.sel-list.is-in{opacity:1;transform:translateY(0) scale(1)}.sel-list.is-in .sel-opt{animation:sel-opt-in 0.22s cubic-bezier(0.22,0.61,0.36,1) backwards}.sel-list.is-in .sel-opt:nth-child(1){animation-delay:0.02s}.sel-list.is-in .sel-opt:nth-child(2){animation-delay:0.05s}.sel-list.is-in .sel-opt:nth-child(3){animation-delay:0.08s}.sel-list.is-in .sel-opt:nth-child(4){animation-delay:0.11s}@media (prefers-reduced-motion:reduce){.sel-list{transition:none}.sel-list.is-in .sel-opt{animation:none}}:root[data-theme="dark"] .sel-list{background:linear-gradient(180deg,rgb(255 255 255 / 8%) 0%,rgb(255 255 255 / 2%) 40%,rgb(255 255 255 / 0%) 70%),color-mix(in srgb,var(--surface) 92%,transparent);border-color:color-mix(in srgb,var(--on-dark) 14%,transparent);box-shadow:inset 0 1px 0 rgb(255 255 255 / 10%),0 18px 38px rgb(0 0 0 / 55%)}.sel-list[hidden]{display:none}.sel-opt{display:flex;align-items:center;gap:8px;padding:11px 12px;border:0;border-radius:var(--r-sm);background:none;color:var(--ink);font:400 15px/1.3 var(--body);text-align:left;cursor:pointer}.sel-opt.is-active{background:color-mix(in srgb,var(--accent-wash) 85%,transparent);color:var(--accent)}.sel-opt.is-on{font-weight:600;color:var(--accent)}.sel-opt.is-on::after{content:"";width:6px;height:6px;margin-left:auto;border-radius:50%;background:var(--accent)}.result-head h2{margin:12px 0 10px}.pick-outlets{margin-top:24px}.pick-outlets b{font-family:var(--display);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-2);display:block;margin-bottom:12px}.outlet-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.outlet{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--ground);color:inherit;text-decoration:none;transition:border-color 0.2s ease,transform 0.2s ease}.outlet:hover{border-color:color-mix(in srgb,var(--accent) 50%,transparent);transform:translateY(-2px)}.outlet span{font-weight:600;font-size:14.5px}.pick-outlets .fine{font-size:12px;color:var(--ink-3);margin:12px 0 0}.tool-promo{margin-top:var(--sp-block);display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"kick btn" "title btn" "note btn";align-items:center;gap:4px 24px;padding:22px 26px;border:1px solid color-mix(in srgb,var(--accent) 38%,transparent);border-radius:var(--r);background:var(--accent-wash);color:inherit;text-decoration:none;transition:transform 0.24s ease,box-shadow 0.24s ease,border-color 0.2s ease}.tool-promo:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 60%,transparent);box-shadow:0 16px 34px color-mix(in srgb,var(--ink) 12%,transparent)}.tool-promo .kick{grid-area:kick;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent)}.tool-promo b{grid-area:title;font-family:var(--display);font-size:clamp(19px,2.2vw,26px);letter-spacing:-0.02em;text-transform:uppercase}.tool-promo p{grid-area:note;margin:4px 0 0;font-size:14px;color:var(--ink-2);max-width:70ch}.tool-promo .btn{grid-area:btn;white-space:nowrap}@media (max-width:720px){.tool-promo{grid-template-columns:minmax(0,1fr);grid-template-areas:"kick" "title" "note" "btn";gap:6px;padding:18px}.tool-promo .btn{margin-top:12px;justify-self:start}}.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:20px}.pick-stat{border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;background:var(--ground)}.pick-stat span{display:block;font-family:var(--display);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}.pick-stat b{font-family:var(--display);font-size:clamp(24px,2.6vw,32px);letter-spacing:-0.03em;line-height:1}.pick-stat b i{font-style:normal;font-size:0.5em;color:var(--accent);margin-left:0.2em}.is-target{position:relative}.is-target::after{content:"";position:absolute;inset:-2px -10px;z-index:-1;border-radius:var(--r-sm);background:linear-gradient(90deg,var(--accent-wash) 0%,color-mix(in srgb,var(--accent-wash) 34%,transparent) 52%,transparent 92%);animation:target-fade 2.6s cubic-bezier(0.22,0.61,0.36,1) forwards}.is-target::before{content:"";position:absolute;left:-10px;top:4px;bottom:4px;width:3px;border-radius:999px;background:var(--accent);transform-origin:top;animation:target-fade 2.6s cubic-bezier(0.22,0.61,0.36,1) forwards,target-mark-in 2.6s cubic-bezier(0.22,0.61,0.36,1) forwards}@media (prefers-reduced-motion:reduce){.is-target::before,.is-target::after{animation:none;opacity:1;transform:none}}.toc-page{position:relative}.toc-page ul{padding-left:14px}.toc-page a{transition:color .18s ease}.toc-page a.is-on{color:var(--accent);font-weight:600}.to-top{position:fixed;right:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font-family:var(--display);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.10);cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s ease,transform .2s ease,background .18s ease}.to-top.is-in{opacity:1;transform:none;pointer-events:auto}.to-top:hover{background:var(--surface-2)}.to-top:focus-visible{outline:2px solid var(--accent);outline-offset:2px}@media (max-width:620px){.to-top{right:14px;bottom:14px;padding:11px}.to-top span{display:none}}@media (prefers-reduced-motion:reduce){.to-top{transition:none}}.more-body{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows 0.34s cubic-bezier(0.22,0.61,0.36,1),opacity 0.26s ease}.more-body-in{overflow:hidden;min-height:0}@media (prefers-reduced-motion:reduce){.more-body{transition:none}}.result-table{margin-top:0}.result-table td b{font-weight:650}.result-total td{border-top:2px solid var(--line);background:var(--surface-2)}.result-note{margin-top:14px;font-size:15px;line-height:1.45;color:var(--ink-2);max-width:78ch}.result-note b{color:var(--ink)}@keyframes sel-opt-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}@keyframes target-fade{0%,58%{opacity:1}100%{opacity:0}}@keyframes target-mark-in{0%{transform:scaleY(0)}14%,100%{transform:scaleY(1)}}</style><link rel="preload" as="style" href="/polebarncost/css/site.css?v=a3683a8b" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/polebarncost/css/site.css?v=a3683a8b"></noscript><link rel="preload" as="image" href="/polebarncost/img/build-1.webp" imagesrcset="/polebarncost/img/build-1-s.webp 800w, /polebarncost/img/build-1.webp 1600w" imagesizes="(max-width: 900px) 100vw, 1640px" fetchpriority="high"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Building a pole barn: order of work, permits and DIY cost", "description": "How a pole barn goes up, what has to be decided before the first post, and what hiring it out costs against doing it yourself.", "url": "https://polebarncost.com/build/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://polebarncost.com/"}, {"@type": "ListItem", "position": 2, "name": "Building a pole barn: order of work, permits and DIY cost", "item": "https://polebarncost.com/build/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What pole barn screws and nails should you use?", "acceptedAnswer": {"@type": "Answer", "text": "Pole barn nails — ring-shank, hot-dip galvanised — hold the framing; self-drilling screws with washers hold the steel. Both are supplied with a kit and both are worth buying properly: the cladding usually outlasts the fasteners."}}, {"@type": "Question", "name": "Is there a pole barn framing diagram?", "acceptedAnswer": {"@type": "Answer", "text": "The anatomy drawing on our what-is-a-pole-barn page is one: posts on piers, girts tying them, trusses spanning wall to wall, purlins across the trusses."}}, {"@type": "Question", "name": "How does pole barn lean to framing work?", "acceptedAnswer": {"@type": "Answer", "text": "A single-slope roof carried by the existing posts on one side and a new row on the other. No trusses, which is why it costs $15 to $17 per square foot against $20 to $60 for enclosed area."}}, {"@type": "Question", "name": "What are pole barn post brackets?", "acceptedAnswer": {"@type": "Answer", "text": "Steel anchors that hold the post above concrete instead of burying it. They keep timber out of the ground — the failure point people worry about — and they turn the footing into a pier the post sits on."}}, {"@type": "Question", "name": "What screws does a pole barn use?", "acceptedAnswer": {"@type": "Answer", "text": "Self-drilling screws with a washer, sized for the panel and the purlin behind it. They are the part that ages first: the cladding routinely outlasts the fasteners holding it."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/polebarncost/">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" fill="none"
+           stroke="currentColor" stroke-linecap="round" aria-hidden="true">
+        <path d="M2.5 12 29.5 4.5" stroke-width="3"></path>
+        <path d="M7 11.2V27" stroke-width="2"></path>
+        <path d="M25.5 6V27" stroke-width="3.6"></path>
+        <path d="M2.5 27.5H29.5" stroke-width="2"></path>
+      </svg>
+      <span class="wordmark"><i>Pole Barn</i> <i>Cost</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a class="in-drawer" href="/polebarncost/">Home</a>
+      <a href="/polebarncost/cost/">Cost</a>
+      <a href="/polebarncost/sizes/">Sizes</a>
+      <a href="/polebarncost/kits/">Kits</a>
+      <a href="/polebarncost/plans/">Plans</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/polebarncost/barndominium/">Pole barn houses</a>
+          <a href="/polebarncost/insulation/">Insulation</a>
+          <a href="/polebarncost/build/" aria-current="page">Building a pole barn</a>
+          <a href="/polebarncost/what-is-a-pole-barn/">What is a pole barn</a>
+          <span class="more-cap">Read</span>
+          <a href="/polebarncost/guides/">Guides</a>
+          <a href="/polebarncost/glossary/">Glossary</a>
+          <a href="/polebarncost/faq/">FAQ</a>
+          <span class="more-cap">Tools</span>
+          <a href="/polebarncost/cost/pole-barn-cost-calculator/">Cost calculator</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/polebarncost/cost/">What it costs</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/polebarncost/cost/">What it costs</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<section class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/polebarncost/">Home</a> / <span aria-current="page">Building a pole barn: order of work, permits and DIY cost</span></nav>
+
+  <div class="hero-top"><div class="hero-head" style="--h1-fit: 12.6">
+    <h1 class="rise-lines">
+      <span class="line"><span>BUILDING A POLE BARN</span></span>
+      <span class="line dim"><span>IN THE ORDER IT HAS TO HAPPEN</span></span>
+    </h1>
+    </div>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">How it is built</span>
+      <p class="lede reveal" data-delay="280">How a pole barn goes up, what has to be decided before the first post, and what hiring it out costs against doing it yourself.</p>
+    </div>
+  </div>
+
+  <a class="tool-promo reveal" data-delay="240" href="/polebarncost/cost/pole-barn-cost-calculator/">
+    <span class="kick">Interactive</span>
+    <b>Pole barn cost calculator: price a build line by line</b>
+    <p>Enter a footprint and get a cost range split into the four blocks a quote is made of — prep, shell, exterior and interior — with the kit price beside it.</p>
+    <span class="btn">Price this barn</span>
+  </a>
+
+  <div class="hero-shot reveal zoom" data-delay="160">
+    <div class="gal" data-gal style="--gal-ratio: 21 / 8">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/polebarncost/img/build-1.webp" srcset="/polebarncost/img/build-1-s.webp 800w, /polebarncost/img/build-1.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Fixing steel wall panels" width="900" height="600"loading="eager" fetchpriority="high" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/polebarncost/img/build-2.webp" data-srcset="/polebarncost/img/build-2-s.webp 800w, /polebarncost/img/build-2.webp 1600w" data-sizes="(max-width: 900px) 100vw, 1640px"           alt="Loader inside finished barn" width="900" height="675"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section class="pb-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal"><p>A <a class="glossary-link" href="/polebarncost/glossary/#pole-barn">pole barn</a> goes up fast and gets finished slowly. The frame is two or three days
+for a crew; everything either side of that is where the schedule actually lives.</p>
+<h2 id="order">How to build a pole barn, step by step</h2>
+<ol>
+<li><strong>Permit and drawings.</strong> Before anything. Lead times here surprise people.</li>
+<li><strong>Site prep.</strong> Level, drain, and make an approach a delivery truck can reverse down.</li>
+<li><strong>Post holes</strong>, to the depth the engineering specifies — usually below the frost
+   line, though the code allows other ways of dealing with frost (see below).</li>
+<li><strong>Posts set and braced</strong>, plumb and square. This is the step that decides whether
+   everything after it is easy or a fight.</li>
+<li><strong><a class="glossary-link" href="/polebarncost/glossary/#girt">Girts</a> and framing.</strong></li>
+<li><strong><a class="glossary-link" href="/polebarncost/glossary/#truss">Trusses</a>.</strong> Equipment and helpers required.</li>
+<li><strong>Roof</strong>, then walls.</li>
+<li><strong>Doors and windows.</strong></li>
+<li><strong>Concrete, then interior.</strong></li>
+</ol>
+<p>Two things cannot be reordered: the permit comes first, and the <a class="glossary-link" href="/polebarncost/glossary/#slab">slab</a> is poured after the
+frame so the roof protects the pour.</p>
+<p>Building a pole barn garage changes two of those steps and nothing else. The slab has to
+be thicker and flatter than a barn floor, and it wants to be poured to a door threshold
+rather than to a level line. And the door openings have to be agreed before the posts go
+in, because an overhead door sits between two columns and the columns are set on day one.</p>
+<h3>Pole barn construction tips that actually change the outcome</h3>
+<p>Most of what goes wrong is decided in the first two days. Set a string line and a datum
+before the first hole. Brace every column in two directions and leave the bracing until
+the trusses are on. Check the diagonal of the post layout before the concrete goes in —
+after that, square is whatever you built.</p>
+<p>The rest is patience. Cladding, trim and closures reward care rather than skill, and a
+crooked first sheet propagates all the way to the end wall.</p>
+<h2 id="diy">What a DIY pole barn actually saves</h2>
+<p>Contractor labour is<span translate="no">&#160;$6</span> to<span translate="no">&#160;$12</span> per square foot. On a 40x60 that is<span translate="no">&#160;$14,400</span> to<span translate="no">&#160;$28,800</span> —
+the entire question in one number.</p>
+<p>What a DIY pole barn does not remove: materials, concrete, doors, the permit, or the
+engineering. When people say building it themselves halved the cost, labour is the half
+they mean — and it is the only half.</p>
+<p>That also sets the ceiling on how cheap a DIY pole barn gets. The kit is the same price
+whoever assembles it, the slab is poured by the same crew, and the county charges the same
+for the permit. Anything advertised as a cheap pole barn is cheap because of what it leaves
+out — no slab, no insulation, fewer doors — not because the labour was free.</p>
+<p>Two steps genuinely need equipment: setting posts plumb, and lifting trusses. If you cannot
+do those, hiring assembly at<span translate="no">&#160;$5</span> to<span translate="no">&#160;$10</span> per square foot is still cheaper than a full build.</p>
+<p>So a cheap diy pole barn is a real thing, with a floor under it. Build your own pole barn
+and you save the labour line and nothing else — which on a 40x60 is a quarter of the bill,
+not half of it. Anyone advertising a figure below that is quoting a smaller building or a
+shorter list.</p>
+<p>Pole barn construction cost, done yourself, is materials plus concrete plus the permit plus
+two days of machine hire. Write those four down before deciding; the fourth is the one
+people forget, and it is what separates a long weekend from a fortnight.</p>
+<h2 id="framing">Framing a pole barn: what the work actually is</h2>
+<p><a class="glossary-link" href="/polebarncost/glossary/#post-frame">Post-frame</a> framing is short on parts and long on precision. Posts every 8 to 12 feet,
+girts across them to carry the wall steel, trusses on top, <a class="glossary-link" href="/polebarncost/glossary/#purlin">purlins</a> across the trusses. That
+is the whole structure — there is no stud wall, no <a class="glossary-link" href="/polebarncost/glossary/#header">header</a> over every opening, no rim joist.</p>
+<p>Which is why the work concentrates in two places. Setting the posts plumb, square and at
+the right height decides everything after it: girts that do not line up, doors that do not
+close, a roof that reads crooked from the road. And lifting trusses is the step where a
+build either has the equipment or stops for a week.</p>
+<h3>Pole barn roof framing and wall framing</h3>
+<p>The two halves of the job behave differently. Pole barn wall framing is girts — horizontal
+members spanning post to post, carrying the steel and nothing else; the posts carry the
+load. Pole barn roof framing is trusses and purlins, and it is the only part with an
+engineer behind it.</p>
+<p>Pole barn framing details worth getting right the first time: girt spacing has to match the
+panel the supplier sent, purlins sit on edge and get blocked at the ends, and every opening
+lands between posts rather than wherever the plan drew it. Pole barn post spacing is the
+number all three follow from — 8 to 12 feet, set on the day the holes are dug.</p>
+<h3>Pole barn brackets, footings and what holds the posts</h3>
+<p>There are three ways the frame meets the ground, and they are priced and permitted
+differently.</p>
+<p><strong>Posts in the ground.</strong> The traditional method: the column goes into the hole and the
+concrete goes around it. Cheapest, and the reason people ask about rot.
+<strong>Pole barn brackets.</strong> A steel bracket cast into a footing holds the column above grade,
+so no timber is buried. More expensive, and the answer if the building will be lived in.
+<strong>Precast pole barn footings.</strong> A cast pad dropped in the hole to spread the load, with the
+post or a bracket on top of it — faster than pouring in place and consistent in wet ground.</p>
+<p>Laminated pole barn posts — three plies glued or nailed up instead of one solid timber —
+are now the default in kits. They are straighter, they hold a bracket better, and the
+buried plies are usually the only treated ones.</p>
+<p>On an old building, repair rotted pole barn posts by cutting the column above the damage
+and standing the sound part on a bracket and a new footing. Digging out and replacing a
+whole buried post under a standing roof is the harder and more dangerous option.</p>
+<p>Pole barn foundations, in the sense a house builder means — a continuous footing under
+every wall — are exactly what post-frame avoids. That is the saving.</p>
+<p>Everything else — cladding, trim, closures — is repetitive work that rewards patience
+rather than skill.</p>
+<h2 id="before">What you need before the first post goes in</h2>
+<ul>
+<li><strong>Two people minimum</strong>, three for truss day.</li>
+<li><strong>A way to lift trusses.</strong> A telehandler or a tractor with forks; renting one for two
+  days is normal and far cheaper than a crane.</li>
+<li><strong>A level, drained pad</strong> and an approach a delivery truck can reverse down.</li>
+<li><strong>The stamped drawings</strong>, in hand, before the kit is ordered.</li>
+</ul>
+<p>A crew of two with the right equipment puts up a bare shell on a small footprint in a
+long weekend. The same building without a lift takes a fortnight and a lot of borrowed
+help.</p>
+<h2 id="permit">Permits and site prep</h2>
+<p>Both happen before delivery and both get underestimated.</p>
+<p>Site prep runs<span translate="no">&#160;$7,500</span> to<span translate="no">&#160;$15,000</span> and does not scale down much with a smaller building —
+you still need level ground, drainage away from the posts and truck access.</p>
+<p>Pole barn footings code is the part worth reading yourself rather than taking on trust.
+The 2024 IRC gives four ways of dealing with frost, only one of which is «go below the
+<a class="glossary-link" href="/polebarncost/glossary/#frost-line">frost line</a>», and it exempts a detached accessory building under 600 square feet with a
+low eave outright. Plenty of the trade quotes the frost-depth rule as if it were the only
+one.</p>
+<p>Permits vary by county. Most want stamped drawings and a setback check. Ask before you
+order a kit, not after it is sitting on your grass.</p>
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">In numbers</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Frame erection, experienced crew</th>
+          <td role="cell">
+            <span class="facts-value">2–3 days</span>
+<span class="facts-hint">Frame only, nothing else</span>          </td><td class="facts-src" role="cell"><a href="https://www.fixr.com/costs/pole-barn" rel="nofollow noopener">Fixr, pole barn cost</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Contractor labour</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$6</span>–12 per sq ft</span>
+<span class="facts-hint">What DIY removes from the total</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.fixr.com/costs/pole-barn" rel="nofollow noopener"
+                 title="Fixr, pole barn cost">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Site prep, before delivery</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$7,500</span>–15,000</span>
+<span class="facts-hint">Levelling, drainage, access</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.fixr.com/costs/pole-barn" rel="nofollow noopener"
+                 title="Fixr, pole barn cost">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Roofers, if hired separately</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$1</span>–1.50 per sq ft</span>
+<span class="facts-hint">Priced by area, not by hour</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.fixr.com/costs/pole-barn" rel="nofollow noopener"
+                 title="Fixr, pole barn cost">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Electrician</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$40</span>–120 per hour</span>
+<span class="facts-hint">Priced by time — the interior is where it lands</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.fixr.com/costs/pole-barn" rel="nofollow noopener"
+                 title="Fixr, pole barn cost">same source</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Cost figures are Fixr&#39;s 2026 contractor data and are their measurements rather than ours. Construction figures are from the National Frame Building Association.</p></section>
+</article><aside class="rail">
+        <div class="toc toc-page reveal" data-delay="120">
+          <b>In this section</b>
+          <ul>
+<li><a href="#order">How to build a pole barn, step by step</a></li><li><a href="#diy">What a DIY pole barn actually saves</a></li><li><a href="#framing">Framing a pole barn: what the work actually is</a></li><li><a href="#before">What you need before the first post goes in</a></li><li><a href="#permit">Permits and site prep</a></li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">What pole barn screws and nails should you use?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Pole barn nails — ring-shank, hot-dip galvanised — hold the framing; self-drilling screws with washers hold the steel. Both are supplied with a kit and both are worth buying properly: the cladding usually outlasts the fasteners.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is there a pole barn framing diagram?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The anatomy drawing on our what-is-a-pole-barn page is one: posts on piers, girts tying them, trusses spanning wall to wall, purlins across the trusses.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How does pole barn lean to framing work?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>A single-slope roof carried by the existing posts on one side and a new row on the other. No trusses, which is why it costs<span translate="no">&#160;$15</span> to<span translate="no">&#160;$17</span> per square foot against<span translate="no">&#160;$20</span> to<span translate="no">&#160;$60</span> for enclosed area.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What are pole barn post brackets?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Steel anchors that hold the post above concrete instead of burying it. They keep timber out of the ground — the failure point people worry about — and they turn the footing into a pier the post sits on.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What screws does a pole barn use?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Self-drilling screws with a washer, sized for the panel and the purlin behind it. They are the part that ages first: the cladding routinely outlasts the fasteners holding it.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/polebarncost/">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" fill="none"
+               stroke="currentColor" stroke-linecap="round" aria-hidden="true">
+            <path d="M2.5 12 29.5 4.5" stroke-width="3"></path>
+            <path d="M7 11.2V27" stroke-width="2"></path>
+            <path d="M25.5 6V27" stroke-width="3.6"></path>
+            <path d="M2.5 27.5H29.5" stroke-width="2"></path>
+          </svg>
+          <span class="wordmark"><i>Pole Barn</i> <i>Cost</i></span>
+        </a>
+        <p class="footer-about">Pole barn and post-frame building costs, broken into the line items a quote is actually made of — by size, by kit and by finished building, with the source and the check date next to every figure.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Costs</b>
+<a href="/polebarncost/cost/">Pole barn cost</a><a href="/polebarncost/sizes/">Cost by size</a><a href="/polebarncost/kits/">Kit prices</a>        </div>
+        <div>
+          <b>Building</b>
+<a href="/polebarncost/build/">Building a pole barn</a><a href="/polebarncost/plans/">Pole barn plans</a><a href="/polebarncost/insulation/">Insulation</a>        </div>
+        <div>
+          <b>Learn</b>
+<a href="/polebarncost/what-is-a-pole-barn/">What is a pole barn</a><a href="/polebarncost/barndominium/">Pole barn houses</a><a href="/polebarncost/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/polebarncost/about/">How this site works</a><a href="/polebarncost/disclosure/">Affiliate disclosure</a><a href="/polebarncost/privacy/">Privacy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>Prices here are collected from published kit listings and building-cost data, with the date we checked stated next to every figure. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p class="footer-contact">Corrections and questions:
+        <a href="mailto:polebarnsupport@gmail.com">polebarnsupport@gmail.com</a></p>
+      <p>&copy; 2026 Pole Barn Cost. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true"></span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/polebarncost/js/app.js?v=18552773" defer></script>
+</body>
+</html>
